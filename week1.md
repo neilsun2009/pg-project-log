@@ -162,7 +162,7 @@ So our method encounters a giant problem in terms of compatibility. Instead of r
 
 ## 06/09/2018
 
-### Further Test on IE Test App
+### Further Test on the IE Test App
 
 Change the log display of bytes to hex representation, refering Jiajie's code.
 
