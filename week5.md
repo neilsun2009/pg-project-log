@@ -19,3 +19,25 @@
 ### Reference
 1. Least squares in Apache Commons Math http://commons.apache.org/proper/commons-math/userguide/leastsquares.html
 2. Levenberg-Marquardt Algorithm https://blog.csdn.net/liu14lang/article/details/53991897
+
+## 05/10/2018
+### RabbitMQ Module Implementation
+1. Logging module: use slf4j (required by RabbitMQ) together with log4j to ensure a stable localization.
+2. Properties: 
+> username: rabbit_admin
+
+> password: rabbit (temp)
+
+> virtual host: rabbit_test (online rabbit_mq)
+
+> exchange name: rmq_direct_test (online rmq_direct)
+
+> queue name: rmq_direct_test_queue_[wifi|ibeacon|all] (online rmq_direct_queue_[wifi|ibeacon|all])
+
+> routing keys: ibeacon, wifi, ... (proposed)
+
+> misc: message ack, durable (persistent in publish) (proposed)
+3. Note that under every quene name, the routings they will accept are consistant, i.e. to let different routings be directed to different queues, their names should be different. Workers under the same queue name will distribute the works in a round-robin fashion.
+
+### Reference
+1. log4j and slf4j https://www.cnblogs.com/ywlaker/p/6124067.html
