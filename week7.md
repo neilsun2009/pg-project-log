@@ -32,3 +32,16 @@
     * **Point**: Point in a 2-d coordinate.
       + double x, y: co-ordinates.
       + Point(double x, double y), Point(Point p): construct function.
+## 18/10/2018
+### Trilateration Implementation
+1. Reference on the official tutorial of Apache Math3 library on least squares [1]. Use Levenberg–Marquardt algorithm.
+2. Class **Trilateration**:
+    + Vector2D[] points: Coordinates of the reference points.
+    + double[] distances: Distances from the reference points.
+    + Trilateration(double[][] points, double[] distances): Construct function.
+    + double[] calculate(double[] startPoint): Calculate the estimated point starting from the start point.
+3. Git repository: https://github.com/neilsun2009/trilateration
+4. Remaining problems: given a start point that is way far from the actual value, the algorithm may return a wrong point, or even worse, the algorithm may break down as the matrix is unable to perform QR decomposition. Consider using a LSQ method to initialize the starting point.
+
+### Reference
+1. Least Squares http://commons.apache.org/proper/commons-math/userguide/leastsquares.html
