@@ -24,7 +24,7 @@
   "measure": [
     {
       "tagId": 654321, // number
-      "tagType": 2, // number
+      "tagType": 2, // number, wifi or bluetooth
       "rssi": -60, // number
       "time": 1541057708 // number, timestamp
     }

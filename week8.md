@@ -23,6 +23,7 @@ The pipeline of the localization system:
 ## 25/10/2018
 ### Project in a Whole
 A backbone structure of Mosent by Jiajie. The data flow is like this:
+
 ![ALT TXT](./images/20181025-01.png)
 Some notes:
 1. The RawSignalDataSource is data retrieved from MQ. They are id-ed by sensors, i.e. each contains a sensor id and a list of detected targets by that sensor.
