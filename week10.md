@@ -19,3 +19,12 @@ Add useful logs for debug and archive.
 ### Remaining Problems
 1. How to implement the LBS device management. Two maps? List?
 2. How to update target information in the LBS device management? Object reference?
+
+## 08/11/2018
+### Android RabbitMQ Handing Over
+Zip my sample code of RabbitMQ producer based on https://www.cloudamqp.com/blog/2015-07-29-rabbitmq-on-android.html.
+
+The sample code already includes RabbitMQ connection, queue declaration, etc, and is able to connect with the consumer in the system.
+
+### Minutes of the Last Three Meetings
+Finish the recording of the last 3 meetings.
